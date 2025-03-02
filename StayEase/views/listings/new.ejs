@@ -1,0 +1,73 @@
+<% layout("/layouts/boilerplate") -%>
+
+<br/>
+<body>
+    <div>
+        <div class="col-8 offset-2">
+            <h1>Create New Listing</h1>
+       
+    <form method ="POST" action="/listings" novalidate class="needs-validation">
+        <div class ="mb-3">
+            <label for="title"class="form-labal">Title</label>
+            <input name="listing[title]" 
+                placeholder="enter title" 
+                type="text"
+                class="form-control" 
+                required 
+            />
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class ="mb-3">
+            <label for="description"class="form-labal">Description</label>
+            <textarea 
+                name="listing[description]" 
+                class ="form-control" 
+                required>
+            </textarea>
+        </div>
+        <div class ="mb-3">
+            <label for="image"class="form-labal">Image-Link</label>
+            <input 
+                name ="listing[image]" 
+                placeholder="enter image url/link" 
+                type="text"
+                class ="form-control" 
+            />
+        </div>
+        
+        <div class="row ">
+        <div class ="mb-3 col-md-4">
+            <label for="price"class="form-labal">Price</label>
+            <input  
+                name="listing[price]"
+                placeholder="enter price"
+                type="text"
+                class ="form-control"
+                required 
+            />
+        </div>
+        
+        <div class ="mb-3 col-md-8">
+            <label for="country"class="form-labal">Country</label>
+            <input  name="listing[country]" placeholder="enter country name" type="text" class="form-control"required >
+        </div>
+    </div>
+        
+        <div class ="mb-3">
+            <label for="location"class="form-labal">location</label>
+            <input  
+                name="listing[location]"
+                placeholder="enter location" 
+                type="text" class="form-control" 
+                required
+            />
+        </div>
+       
+        <button class="btn btn-dark mb-3" >Add</button>
+    </form>
+    </div>
+</div>
+    
+</body>
