@@ -1,0 +1,8 @@
+ExploreEase
+
+
+1 npm install
+2 cd init
+3 databse create
+4 node app.js
+5  http://localhost:8080/listings
