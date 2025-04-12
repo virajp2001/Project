@@ -1,0 +1,24 @@
+.user-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
